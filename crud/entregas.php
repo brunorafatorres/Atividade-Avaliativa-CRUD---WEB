@@ -67,18 +67,18 @@ if (isset($_GET['entregar'])) {
 <html>
 <head><title>Controle de Entregas</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>📦 Controle de Entregas</h1>
+<h1> Controle de Entregas</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Nova entrega</a>
+    <a href="?action=add">Nova entrega</a>
 <?php endif; ?>
 
 <?php if($action === 'list'): 
     $pendentes = listarEntregas($pdo, 'pendente');
     $entregues = listarEntregas($pdo, 'entregue');
 ?>
-    <h2>⏳ Pendentes</h2>
+    <h2>Pendentes</h2>
     <?php if(count($pendentes) > 0): ?>
         <table border="1" cellpadding="8">
             <tr><th>Destinatário</th><th>Endereço</th><th>Ações</th></tr>
@@ -87,7 +87,7 @@ if (isset($_GET['entregar'])) {
                 <td><?= htmlspecialchars($e['destinatario']) ?></td>
                 <td><?= htmlspecialchars($e['endereco']) ?></td>
                 <td>
-                    <a href="?entregar=<?= $e['id'] ?>">✅ Marcar entregue</a> |
+                    <a href="?entregar=<?= $e['id'] ?>">Marcar entregue</a> |
                     <a href="?action=edit&id=<?= $e['id'] ?>">Editar</a> |
                     <a href="?deletar=<?= $e['id'] ?>" onclick="return confirm('Remover?')">Excluir</a>
                 </td>
@@ -96,7 +96,7 @@ if (isset($_GET['entregar'])) {
         </table>
     <?php else: echo "<p>Nenhuma entrega pendente.</p>"; endif; ?>
 
-    <h2>✅ Entregues</h2>
+    <h2>Entregues</h2>
     <?php if(count($entregues) > 0): ?>
         <table border="1" cellpadding="8">
             <tr><th>Destinatário</th><th>Endereço</th><th>Ações</th></tr>

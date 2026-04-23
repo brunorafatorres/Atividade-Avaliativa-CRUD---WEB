@@ -87,11 +87,11 @@ if (isset($_GET['deletar'])) {
 <html>
 <head><title>Sistema de Enquetes</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>🗳️ Sistema de Enquetes</h1>
+<h1> Sistema de Enquetes</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <a href="?action=list">Enquetes</a> | 
-<a href="?action=add">➕ Criar nova enquete</a>
+<a href="?action=add">Criar nova enquete</a>
 
 <?php if($action === 'list'): 
     $enquetes = listarEnquetes($pdo);

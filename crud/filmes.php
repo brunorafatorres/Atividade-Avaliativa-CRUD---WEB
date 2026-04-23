@@ -68,13 +68,13 @@ if (isset($_GET['assistir'])) {
 <html>
 <head><title>Lista de Filmes</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>🎬 Filmes para assistir</h1>
+<h1>Filmes para assistir</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <a href="?">Todos</a> | 
 <a href="?filtro=nao_assistido">Não assistidos</a> |
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Novo filme</a>
+    <a href="?action=add">Novo filme</a>
 <?php endif; ?>
 
 <?php 

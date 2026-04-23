@@ -56,11 +56,11 @@ if (isset($_GET['deletar'])) {
 <html>
 <head><title>Cadastro de Pets</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>🐾 Cadastro de Pets</h1>
+<h1> Cadastro de Pets</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Novo pet</a>
+    <a href="?action=add">Novo pet</a>
 <?php endif; ?>
 
 <?php if($action === 'list'): 

@@ -59,7 +59,7 @@ if (isset($_GET['deletar'])) {
 <html>
 <head><title>Cadastro de Cursos</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>📚 Cursos Livres</h1>
+<h1>Cursos Livres</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <a href="?">Todos</a> | 
@@ -67,7 +67,7 @@ if (isset($_GET['deletar'])) {
 <a href="?nivel=intermediario">Intermediário</a> | 
 <a href="?nivel=avancado">Avançado</a> |
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Novo curso</a>
+    <a href="?action=add">+ Novo curso</a>
 <?php endif; ?>
 
 <?php if($action === 'list'): 

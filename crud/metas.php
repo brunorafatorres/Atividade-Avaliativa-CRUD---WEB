@@ -67,11 +67,11 @@ if (isset($_GET['deletar'])) {
 <html>
 <head><title>Metas Pessoais</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>🎯 Sistema de Metas Pessoais</h1>
+<h1> Sistema de Metas Pessoais</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Nova meta</a>
+    <a href="?action=add">Nova meta</a>
 <?php endif; ?>
 
 <?php if($action === 'list'): 
@@ -79,7 +79,7 @@ if (isset($_GET['deletar'])) {
     $pendentes = array_filter($metas, fn($m) => $m['status'] == 'pendente');
     $concluidas = array_filter($metas, fn($m) => $m['status'] == 'concluida');
 ?>
-    <h2>📌 Metas Pendentes</h2>
+    <h2>Metas Pendentes</h2>
     <?php if(count($pendentes) > 0): ?>
         <table border="1" cellpadding="8">
             <tr><th>Meta</th><th>Prazo</th><th>Progresso</th><th>Status</th><th>Ações</th></tr>
@@ -106,7 +106,7 @@ if (isset($_GET['deletar'])) {
         </table>
     <?php else: echo "<p>Nenhuma meta pendente.</p>"; endif; ?>
 
-    <h2>✅ Metas Concluídas</h2>
+    <h2>Metas Concluídas</h2>
     <?php if(count($concluidas) > 0): ?>
         <table border="1" cellpadding="8">
             <tr><th>Meta</th><th>Prazo</th><th>Progresso</th><th>Ações</th></tr>

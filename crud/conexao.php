@@ -1,7 +1,7 @@
 <?php
 // conexao.php
 $host = 'localhost';
-$dbname = 'crud_exercicios';  // ou o nome do seu banco
+$dbname = 'crud_exercicios'; 
 $user = 'root';
 $pass = '';
 

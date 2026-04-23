@@ -65,13 +65,13 @@ if (isset($_GET['deletar'])) {
 <html>
 <head><meta charset="UTF-8"><title>Playlist de Músicas</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>🎵 Playlist de Músicas</h1>
+<h1>Playlist de Músicas</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Adicionar música</a>
+    <a href="?action=add">Adicionar música</a>
 <?php endif; ?>
-<p><strong>⏱️ Tempo total da playlist: <?= formatarDuracao(tempoTotalPlaylist($pdo)) ?></strong></p>
+<p><strong>Tempo total da playlist: <?= formatarDuracao(tempoTotalPlaylist($pdo)) ?></strong></p>
 
 <?php if($action === 'list'): 
     $musicas = listarMusicas($pdo);

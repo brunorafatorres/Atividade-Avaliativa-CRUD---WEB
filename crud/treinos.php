@@ -60,13 +60,13 @@ if (isset($_GET['deletar'])) {
 <html>
 <head><title>Registro de Treinos</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>🏋️ Registro de Treinos</h1>
+<h1>Registro de Treinos</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Novo exercício</a>
+    <a href="?action=add">Novo exercício</a>
 <?php endif; ?>
-<p><strong>📊 Volume total (séries × repetições × carga): <?= number_format(volumeTotal($pdo), 2, ',', '.') ?></strong></p>
+<p><strong>Volume total (séries x repetições x carga): <?= number_format(volumeTotal($pdo), 2, ',', '.') ?></strong></p>
 
 <?php if($action === 'list'): 
     $treinos = listarTreinos($pdo);

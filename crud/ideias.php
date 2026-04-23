@@ -59,7 +59,7 @@ if (isset($_GET['deletar'])) {
 <html>
 <head><title>Banco de Ideias</title><style>body{font-family:Arial;margin:20px}</style></head>
 <body>
-<h1>💡 Banco de Ideias de Projetos</h1>
+<h1>Banco de Ideias de Projetos</h1>
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <a href="?">Todas</a> | 
@@ -67,7 +67,7 @@ if (isset($_GET['deletar'])) {
 <a href="?dificuldade=media">Média dificuldade</a> | 
 <a href="?dificuldade=alta">Alta dificuldade</a> |
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Nova ideia</a>
+    <a href="?action=add"> Nova ideia</a>
 <?php endif; ?>
 
 <?php if($action === 'list'): 
@@ -81,9 +81,9 @@ if (isset($_GET['deletar'])) {
                 <td><?= nl2br(htmlspecialchars($i['descricao'])) ?></td>
                 <td>
                     <?php 
-                        if($i['dificuldade']=='baixa') echo '🟢 Baixa';
-                        elseif($i['dificuldade']=='media') echo '🟡 Média';
-                        else echo '🔴 Alta';
+                        if($i['dificuldade']=='baixa') echo 'Baixa';
+                        elseif($i['dificuldade']=='media') echo 'Média';
+                        else echo 'Alta';
                     ?>
                 </td>
                 <td>

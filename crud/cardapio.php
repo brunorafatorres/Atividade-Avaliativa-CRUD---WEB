@@ -74,7 +74,7 @@ if (isset($_GET['deletar'])) {
 <?php if($mensagem): ?><p><strong><?= $mensagem ?></strong></p><?php endif; ?>
 <a href="index.html">← Voltar ao menu</a> | 
 <?php if($action === 'list'): ?>
-    <a href="?action=add">➕ Novo Prato</a>
+    <a href="?action=add">+ Novo Prato</a>
 <?php endif; ?>
 
 <?php if($action === 'list'): 
@@ -94,7 +94,7 @@ if (isset($_GET['deletar'])) {
                     <td><?= htmlspecialchars($p['descricao']) ?></td>
                     <td>R$ <?= number_format($p['preco'],2,',','.') ?></td>
                     <td>
-                        <a href="?action=edit&id=<?= $p['id'] ?>">Editar</a> |
+                        <a href="?action=edit&id=<?= $p['id'] ?>">Editar</a> 
                         <a href="?deletar=<?= $p['id'] ?>" onclick="return confirm('Remover?')">Excluir</a>
                     </td>
                 </tr>

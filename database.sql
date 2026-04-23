@@ -1,10 +1,4 @@
--- ============================================
--- BANCO DE DADOS: crud_exercicios
--- PROFESSOR: Me. Juan Carlos Quevedo Weimar
--- DISCIPLINA: Programação Web II
--- ============================================
 
--- Criar banco de dados (opcional)
 CREATE DATABASE IF NOT EXISTS crud_exercicios;
 USE crud_exercicios;
 
@@ -136,7 +130,3 @@ CREATE TABLE rankings (
     nome VARCHAR(100) NOT NULL,
     pontuacao INT NOT NULL
 );
-
--- ============================================
--- FIM DOS SCRIPTS SQL
--- ============================================

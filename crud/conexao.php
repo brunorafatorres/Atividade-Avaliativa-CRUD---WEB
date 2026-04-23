@@ -1,5 +1,4 @@
 <?php
-// conexao.php
 $host = 'localhost';
 $dbname = 'crud_exercicios'; 
 $user = 'root';

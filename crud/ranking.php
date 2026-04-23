@@ -94,7 +94,7 @@ if($action === 'list' || $exibirTodos):
         </table>
     <?php else: echo "<p>Nenhum participante cadastrado.</p>"; endif;
     if($exibirTodos) echo '<a href="?">← Voltar ao TOP 5</a>';
-elseif($action === 'add' || $action === 'edit'):
+elseif($action === 'add' || $action === 'edit')
     $editando = ($action === 'edit');
     $ponto = $editando ? buscarPontuacao($pdo, $_GET['id']) : null;
 ?>
